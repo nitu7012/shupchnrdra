@@ -496,6 +496,7 @@ body {
     background: url('../img/fearu-bg.jpg') no-repeat center center/cover;
     color: #fff;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Dark overlay */
@@ -663,6 +664,7 @@ section.why-choose-us {
     position: relative;
     z-index: 1;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .why-choose-us::before {
