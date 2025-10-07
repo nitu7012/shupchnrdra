@@ -1311,7 +1311,21 @@ section.why-choose-us {
 }
 
 /* =============== Footer Section End =============== */
+.alll-heading {
+    font-size: 2.4rem;
+    color: var(--bot-N-primary);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
 
+.all-sub-heading {
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+}
 
 /* =====  college Card Design ===== */
 .msc-agrotech-card-main-section {
@@ -1406,3 +1420,136 @@ section.why-choose-us {
 }
 
 /* end college */
+
+:root {
+    --primary-color: #005b9a;
+    --primary-dark: #004173;
+    --accent-color: #f28e1e;
+    --card-bg: #eaf6ff;
+}
+
+/* Section Title */
+.service-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.service-section h2 {
+    color: var(--primary-dark);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.service-section h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Service Card */
+.service-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 60px 25px 25px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 20px rgba(0, 91, 154, 0.15);
+}
+
+/* Circle Icon at top */
+.service-card .icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -60px;
+    /* move circle above card */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .icon-circle i {
+    font-size: 3rem;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.service-card:hover .icon-circle i {
+    color: var(--accent-color);
+}
+
+.service-card h5 {
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.icon-circle {
+    position: absolute;
+    left: 38%;
+    top: -1%;
+}
+
+/* Button Styling */
+.service-card a.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    padding: 8px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s ease;
+}
+
+.service-card a.btn i {
+    font-size: 0.8rem;
+    /* smaller arrow */
+    margin-top: 1px;
+}
+
+.service-card a.btn:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.service-card a.btn:hover i {
+    transform: translateX(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-card {
+        margin-bottom: 25px;
+    }
+}
