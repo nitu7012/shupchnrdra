@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning Hero Section</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <style>
+    :root {
+      --bot-N-primary: #005b9a;
+      --bot-N-primary-dark: #f28e1e;
+      --bot-N-text-dark: #000;
+      --bot-N-bg-light: #f7f9fc;
+      --bot-N-text-light: #fff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bot-N-bg-light);
+    }
+
+    /* ========================= about Section ========================= */
+    .msc-agrotech-services-hero {
+      padding: 60px 15px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Left Content */
+    .msc-agrotech-services-hero-subtitle {
+      color: var(--bot-N-primary-dark);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    .msc-agrotech-services-hero-title {
+      font-weight: 800;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: var(--bot-N-text-dark);
+    }
+
+    .msc-agrotech-services-hero-description {
+      color: #6c757d;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    /* Progress bars */
+    .msc-agrotech-services-hero-progress p {
+      margin-bottom: 0;
+      font-weight: 500;
+      color: var(--bot-N-text-dark);
+      font-size: 0.9rem;
+    }
+
+    .msc-agrotech-services-hero-progress .progress {
+      height: 14px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .msc-agrotech-services-hero-btn {
+      background-color: var(--bot-N-primary-dark);
+      color: var(--bot-N-text-light);
+      border: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      padding: 10px 28px;
+    }
+
+    .msc-agrotech-services-hero-btn:hover {
+      background-color:var(--bot-N-primary-dark);
+    }
+
+    /* Right Content */
+    .msc-right-services-hero-section {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .msc-right-services-hero-section img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+      min-height: 380px;
+      max-height: 420px;
+      transition: all 0.3s ease;
+    }
+
+    /* Card overlay */
+    .msc-agrotech-services-hero-card {
+      position: absolute;
+      bottom:-5%;
+      right:10px;
+      transform: translateX(-50%);
+      max-width: 280px;
+      text-align: center;
+      background: #fff;
+      border-radius: 1rem;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border-left: 5px solid var(--bot-N-primary);
+      z-index: 2;
+    }
+
+    .msc-agrotech-services-hero-card-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-top: 10px;
+      color: var(--bot-N-text-dark);
+    }
+
+    .msc-agrotech-services-hero-card-text {
+      font-size: 0.85rem;
+      color: #6c757d;
+      margin-top: 8px;
+    }
+
+    .msc-agrotech-services-hero-card .icon {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      background-color: #e7f5ff;
+      color: var(--bot-N-primary);
+    }
+
+    /* ========================= Responsive ========================= */
+    @media (max-width: 992px) {
+      .msc-agrotech-services-hero-card {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 240px;
+        padding: 15px;
+      }
+
+      .msc-agrotech-services-hero-title {
+        font-size: 2rem;
+      }
+
+      .msc-right-services-hero-section img {
+        min-height: 480px;
+        max-height: 520px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .msc-agrotech-services-hero {
+        padding: 40px 10px;
+      }
+
+      .msc-agrotech-services-hero-title {
+        font-size: 1.6rem;
+      }
+
+      .msc-agrotech-services-hero-description {
+        font-size: 0.95rem;
+      }
+
+      .msc-agrotech-services-hero-progress .progress,
+      .msc-agrotech-services-hero-progress .d-flex {
+        width: 100% !important;
+      }
+
+      .msc-right-services-hero-section img {
+        min-height: 220px;
+        max-height: 260px;
+      }
+
+      .msc-agrotech-services-hero-card {
+        max-width: 200px;
+        padding: 12px;
+        bottom: -25%;
+        left: 25%;
+        overflow: visible;
+      }
+    
+    }
+
+    /* =======about */
+  </style>
+</head>
+
+<body>
+  <!-- about Section -->
+  <section class="msc-agrotech-services-hero container">
+    <div class="row align-items-center">
+      <!-- Left Column -->
+      <div class="col-lg-7">
+        <p class="msc-agrotech-services-hero-subtitle">About Our E-Learning Platform</p>
+        <h1 class="msc-agrotech-services-hero-title">Empowering Students Across Colleges with Smart Admissions</h1>
+        <p class="msc-agrotech-services-hero-description">
+          Our platform connects students with various colleges, guiding them through admissions, scholarships, and career opportunities.
+          With an intuitive interface and expert guidance, students can explore courses, track progress, and make informed decisions
+          for their academic future.
+        </p>
+
+        <!-- Progress Bars -->
+        <div class="msc-agrotech-services-hero-progress mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-1" style="width: 60%;">
+            <p class="mb-0"><strong>Colleges Partnered</strong></p>
+            <span>50+</span>
+          </div>
+          <div class="progress" style="width: 60%;">
+            <div class="progress-bar bg-success" style="width: 100%;"></div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-1" style="width: 60%;">
+            <p class="mb-0"><strong>Students Enrolled</strong></p>
+            <span>5000+</span>
+          </div>
+          <div class="progress" style="width: 60%;">
+            <div class="progress-bar bg-success" style="width: 90%;"></div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-1" style="width: 60%;">
+            <p class="mb-0"><strong>Satisfaction Rate</strong></p>
+            <span>98%</span>
+          </div>
+          <div class="progress" style="width: 60%;">
+            <div class="progress-bar bg-success" style="width: 98%;"></div>
+          </div>
+        </div>
+
+        <button class="msc-agrotech-services-hero-btn btn rounded-pill">Learn More</button>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-5 mt-4 mt-lg-0">
+        <div class="msc-right-services-hero-section">
+          <img src="./assets/img/elerning.jpg" alt="E-learning Illustration">
+
+          <!-- Card Overlay -->
+          <div class="msc-agrotech-services-hero-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                <path d="M214.2,319.991L214.2,319.991C197.34,301.585,232.293,180.319,27.075,97.569 
+                  c-33.75,6.125-71.688,176.672,127.719,228.844c59.609,29.797,50.219,79.469,50.219,107.078h38.344 
+                  c0,0-15.688-87.578,54.375-119.672c47.672-21.828,179.328-28.828,214.265-225.547
+                  C445.387,49.757,208.825,124.835,214.2,319.991z 
+                  M165.84,286.804c-4.063,2.813-9.641,1.797-12.453-2.266c-19.516-28.266-73.484-93.484-97.344-117.281 
+                  c-3.5-3.484-3.5-9.156,0-12.641c3.484-3.5,9.156-3.5,12.641,0c25.344,25.391,78.688,89.859,99.422,119.734 
+                  C170.918,278.413,169.903,283.991,165.84,286.804z 
+                  M415.965,141.663c-65.25,41.234-118.578,109.844-142.625,147.109 
+                  c-2.672,4.141-8.219,5.328-12.359,2.656c-4.141-2.688-5.328-8.219-2.641-12.375
+                  c25.141-38.766,79.141-108.766,148.047-152.5 
+                  c4.172-2.656,9.688-1.406,12.344,2.766C421.372,133.491,420.137,139.007,415.965,141.663z" />
+              </svg>
+            </div>
+            <h5 class="msc-agrotech-services-hero-card-title">Our Vision</h5>
+            <p class="msc-agrotech-services-hero-card-text">
+              Provide students with smart and accessible learning solutions that help them secure admissions, scholarships, and excel in their studies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===end about -->
+</body>
+
+</html>

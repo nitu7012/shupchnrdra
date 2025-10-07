@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subh Chandra Educational Welfare Foundation - Footer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bot-N-primary: #005b9a;
+            --bot-N-primary-dark: #f28e1e;
+        }
+
+        /* =============== Footer Section =============== */
+        .msc-agrotech-footer {
+            position: relative;
+            background: #f2f6f4;
+            color: #000;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 60px 20px 30px;
+            overflow: hidden;
+        }
+
+        .triangle {
+            width: 100%;
+            height: 60px;
+            aspect-ratio: 1;
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+            background: linear-gradient(90deg, #f2f6f4, #f2f6f4);
+        }
+
+        .msc-agrotech-footer h5 {
+            color: var(--bot-N-primary);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .msc-agrotech-footer__link {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        .msc-agrotech-footer__link:hover {
+            color: var(--bot-N-primary-dark);
+            text-decoration: underline;
+        }
+
+        .msc-agrotech-footer__logo img {
+            max-height: 70px;
+            width: auto;
+        }
+
+        .msc-agrotech-footer__contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .msc-agrotech-footer__contact-item i {
+            color: var(--bot-N-primary);
+            font-size: 1.2rem;
+        }
+
+        .msc-agrotech-footer__subscribe-form {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+
+        .msc-agrotech-footer__subscribe-form input {
+            flex: 1;
+            border-radius: 0.5rem;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        .msc-agrotech-footer__subscribe-form input:focus {
+            border-color: var(--bot-N-primary);
+            box-shadow: 0 0 0 2px rgba(0, 91, 154, 0.2);
+        }
+
+        .msc-agrotech-footer .btn-primary {
+            background-color: var(--bot-N-primary);
+            border: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .msc-agrotech-footer .btn-primary:hover {
+            background-color: var(--bot-N-primary-dark);
+        }
+
+        .msc-agrotech-footer small {
+            color: #555;
+        }
+
+        /* Social Icons */
+        .msc-social-icons a {
+            color: var(--bot-N-primary);
+            margin-right: 15px;
+            font-size: 1.3rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .msc-social-icons a:hover {
+            color: var(--bot-N-primary-dark);
+            transform: scale(1.1);
+        }
+
+        /* Responsive Fix */
+        @media (max-width: 767px) {
+            .msc-footer-contact-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+        /* =============== Footer Section End =============== */
+    </style>
+
+   
+</head>
+
+<body>
+
+    <div class="triangle"></div>
+
+    <footer class="msc-agrotech-footer">
+        <div class="container">
+            <!-- Top Contact Info -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+                    <div class="msc-agrotech-footer__logo">
+                        <img src="./assets/img/logo-2.webp" alt="Subh Chandra Educational Welfare Foundation Logo">
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-md-end justify-content-center flex-wrap gap-4 msc-footer-contact-row">
+                        <div class="msc-agrotech-footer__contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="msc-agrotech-footer__contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@subhchandrafoundation.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-50 mb-4">
+
+            <!-- Main Footer Content -->
+            <div class="row gy-4">
+                <div class="col-md-3 col-sm-6">
+                    <h5>About Us</h5>
+                    <p>
+                        The <strong>Subh Chandra Educational Welfare Foundation</strong> was established in 2021 with
+                        the aim of providing quality guidance to students who intend to study. Today, we are leaders in
+                        educational consultancy and represent leading colleges and universities in India.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h5>Engineering Colleges</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="msc-agrotech-footer__link">Andhra Pradesh</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Odisha</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Punjab</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Telangana</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Uttar Pradesh</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">West Bengal</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h5>Popular Exams</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="msc-agrotech-footer__link">JEE 2025</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">JEE Advanced</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">WBJEE 2025</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">BITSAT</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">COMEDK 2025</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">UPCET 2025</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h5>Newsletter Signup</h5>
+                    <form class="msc-agrotech-footer__subscribe-form">
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <small class="d-block mt-2">
+                        Enter your email address to get the latest updates, offers, and discount coupons from us.
+                    </small>
+                    <div class="msc-agrotech-footer__contact-item mt-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Plot 45, Green Valley, Pune, Maharashtra, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-50 mt-4">
+
+            <!-- Bottom Section -->
+            <div class="text-center mt-3">
+                <p class="mb-1">
+                    © 2025 <strong>Subh Chandra Educational Welfare Foundation</strong> |
+                    Developed By <b>Vibrantick Infotech Solutions</b>
+                </p>
+                <div class="msc-social-icons mt-2">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="mt-3">
+                    <a href="#" class="msc-agrotech-footer__link d-inline-block me-3">Privacy Policy</a>
+                    <a href="#" class="msc-agrotech-footer__link d-inline-block">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

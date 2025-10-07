@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentAtt</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bot-N-navbar fixed-top bg-white shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand bot-N-logo" href="index.php">
+                <img src="./assets/img/logo-2.webp" alt="Subh Chandra Foundation Logo" height="50">
+            </a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#botNNavbar"
+                aria-controls="botNNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="botNNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link bot-N-nav-link active" href="index.php">Home</a></li>
+
+                    <!-- Who We Are -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link bot-N-nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Who We Are</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about-us.php">About Us</a></li>
+                            <li><a class="dropdown-item" href="director-message.php">Director Message</a></li>
+                            <li><a class="dropdown-item" href="vision-mission.php">Vision & Mission</a></li>
+                            <li><a class="dropdown-item" href="faqs.php">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Associate Colleges -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link bot-N-nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Associate Colleges</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="andhra-colleges.php">Andhra Pradesh</a></li>
+                            <li><a class="dropdown-item" href="odisha-colleges.php">Odisha</a></li>
+                            <li><a class="dropdown-item" href="punjab-colleges.php">Punjab</a></li>
+                            <li><a class="dropdown-item" href="telangana-colleges.php">Telangana</a></li>
+                            <li><a class="dropdown-item" href="uttar-pradesh.php">Uttar Pradesh</a></li>
+                            <li><a class="dropdown-item" href="west-bengal.php">West Bengal</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Our Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link bot-N-nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="admission-guidance.php">Admission Guidance</a></li>
+                            <li><a class="dropdown-item" href="career-counsling.php">Career Counselling</a></li>
+                            <li><a class="dropdown-item" href="diploma-admission.php">Diploma Admission</a></li>
+                            <li><a class="dropdown-item" href="engineering-admission.php">Engineering Admission</a></li>
+                            <li><a class="dropdown-item" href="student-credit-card.php">Student Credit Card Scheme</a>
+                            </li>
+                            <li><a class="dropdown-item" href="scholarship.php">Scholarship Opportunities</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2">
+                    <a href="tel:+918699112731" class="bot-N-btn-outline ">Contact Us</a>
+
+                    <a href="registration.php" class="bot-N-btn-fill">Registration <i
+                            class="fa-solid fa-paper-plane"></i></a>
+                </div>
+
+                <!-- Mobile Contact Info -->
+                <div class="mobile-contact-info d-lg-none mt-3">
+                    <a href="tel:+911234567890" class="d-block"><i class="fa-solid fa-phone"></i>+91-8699112731</a>
+                    <a href="#" class="d-block"><i class="fa-solid fa-clock"></i> Mon - Fri: 9am - 6pm</a>
+                    <a href="#" class="d-block"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="d-block"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="freix-nk-hero position-relative mt-5 pt-4">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./assets/img/bannermain.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/img/banner-1---Copy.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- about Section -->
+    <section class="msc-agrotech-services-hero container">
+        <div class="row align-items-center">
+            <!-- Left Column -->
+            <div class="col-lg-7">
+                <p class="msc-agrotech-services-hero-subtitle">About Our E-Learning Platform</p>
+                <h1 class="msc-agrotech-services-hero-title">Empowering Students Across Colleges with Smart Admissions
+                </h1>
+                <p class="msc-agrotech-services-hero-description">
+                    Our platform connects students with various colleges, guiding them through admissions, scholarships,
+                    and career opportunities.
+                    With an intuitive interface and expert guidance, students can explore courses, track progress, and
+                    make informed decisions
+                    for their academic future.
+                </p>
+
+                <!-- Progress Bars -->
+                <div class="msc-agrotech-services-hero-progress mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-1" style="width: 60%;">
+                        <p class="mb-0"><strong>Colleges Partnered</strong></p>
+                        <span>50+</span>
+                    </div>
+                    <div class="progress" style="width: 60%;">
+                        <div class="progress-bar bg-success" style="width: 100%;"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-1" style="width: 60%;">
+                        <p class="mb-0"><strong>Students Enrolled</strong></p>
+                        <span>5000+</span>
+                    </div>
+                    <div class="progress" style="width: 60%;">
+                        <div class="progress-bar bg-success" style="width: 90%;"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-1" style="width: 60%;">
+                        <p class="mb-0"><strong>Satisfaction Rate</strong></p>
+                        <span>98%</span>
+                    </div>
+                    <div class="progress" style="width: 60%;">
+                        <div class="progress-bar bg-success" style="width: 98%;"></div>
+                    </div>
+                </div>
+
+                <button class="msc-agrotech-services-hero-btn btn rounded-pill">Learn More</button>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-5 mt-4 mt-lg-0">
+                <div class="msc-right-services-hero-section">
+                    <img src="./assets/img/elerning.jpg" alt="E-learning Illustration">
+
+                    <!-- Card Overlay -->
+                    <div class="msc-agrotech-services-hero-card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                                <path d="M214.2,319.991L214.2,319.991C197.34,301.585,232.293,180.319,27.075,97.569 
+                  c-33.75,6.125-71.688,176.672,127.719,228.844c59.609,29.797,50.219,79.469,50.219,107.078h38.344 
+                  c0,0-15.688-87.578,54.375-119.672c47.672-21.828,179.328-28.828,214.265-225.547
+                  C445.387,49.757,208.825,124.835,214.2,319.991z 
+                  M165.84,286.804c-4.063,2.813-9.641,1.797-12.453-2.266c-19.516-28.266-73.484-93.484-97.344-117.281 
+                  c-3.5-3.484-3.5-9.156,0-12.641c3.484-3.5,9.156-3.5,12.641,0c25.344,25.391,78.688,89.859,99.422,119.734 
+                  C170.918,278.413,169.903,283.991,165.84,286.804z 
+                  M415.965,141.663c-65.25,41.234-118.578,109.844-142.625,147.109 
+                  c-2.672,4.141-8.219,5.328-12.359,2.656c-4.141-2.688-5.328-8.219-2.641-12.375
+                  c25.141-38.766,79.141-108.766,148.047-152.5 
+                  c4.172-2.656,9.688-1.406,12.344,2.766C421.372,133.491,420.137,139.007,415.965,141.663z" />
+                            </svg>
+                        </div>
+                        <h5 class="msc-agrotech-services-hero-card-title">Our Vision</h5>
+                        <p class="msc-agrotech-services-hero-card-text">
+                            Provide students with smart and accessible learning solutions that help them secure
+                            admissions, scholarships, and excel in their studies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ===end about -->
+    <!-- Feature Section -->
+    <section class="feature-section">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="section-heading">
+                <p>━⋅•⋅⊰∙∘☽ Subh Chandra Educational Welfare ☾∘∙⊱⋅•⋅━</p>
+                <h1>We are here to help you grow in career</h1>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <!-- Feature Block 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                    <div class="feature-card">
+                        <figure class="image-box">
+                            <img src="./assets/img/Admission Guidance.jpg" alt="Admission Guidance">
+                        </figure>
+                        <div class="text">
+                            <h3><a href="admission-guidance.php">Admission Guidance</a></h3>
+                            <p>Expert guidance to help students select the right colleges and programs for their career
+                                growth.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Block 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                    <div class="feature-card">
+                        <figure class="image-box">
+                            <img src="./assets/img/Career Counsling.jpg" alt="Career Counseling">
+                        </figure>
+                        <div class="text">
+                            <h3><a href="career-counsling.php">Career Counseling</a></h3>
+                            <p>Personalized counseling sessions to identify strengths and guide career paths
+                                effectively.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Block 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                    <div class="feature-card">
+                        <figure class="image-box">
+                            <img src="./assets/img/Scholarship opptunity.jpg" alt="Scholarship Opportunities">
+                        </figure>
+                        <div class="text">
+                            <h3><a href="scholarship.php">Scholarship Opportunities</a></h3>
+                            <p>Access to scholarships and funding resources to make education affordable and achievable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- === edn feature -->
+    <!-- ===== Associated Colleges Section ===== -->
+    <section class="msc-agrotech-card-main-section mb-5">
+        <div class="container">
+            <p class="text-center text-muted mb-1">Countries We Offer Support</p>
+            <h5 class="msc-agrotech-services-title">Our Associated Colleges</h5>
+
+            <div class="row">
+
+                <!-- Andhra Pradesh -->
+                <div class="col-md-6">
+                    <div class="msc-agrotech-services-card-design-card">
+                        <img src="./assets/img/Andhra Pradesh Engineering Institute.jpg" alt="Andhra Pradesh College">
+                        <div class="msc-agrotech-services-card-design-content">
+                            <div class="msc-agrotech-services-card-design-title">Andhra Pradesh Engineering Institute
+                            </div>
+                            <p class="msc-agrotech-services-card-design-subtitle">
+                                Premier institute offering top-tier programs with strong industry collaborations.
+                            </p>
+                            <a href="https://www.andhrauniversity.edu.in/" target="_blank" class="btn btn-primary">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Odisha -->
+                <div class="col-md-6">
+                    <div class="msc-agrotech-services-card-design-card">
+                        <img src="./assets/img/Odisha Institute of Technology.jpg" alt="Odisha College">
+                        <div class="msc-agrotech-services-card-design-content">
+                            <div class="msc-agrotech-services-card-design-title">Odisha Institute of Technology</div>
+                            <p class="msc-agrotech-services-card-design-subtitle">
+                                A leading educational hub in Eastern India, focusing on innovation and research.
+                            </p>
+                            <a href="https://www.bput.ac.in/" target="_blank" class="btn btn-primary">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Punjab -->
+                <div class="col-md-6">
+                    <div class="msc-agrotech-services-card-design-card">
+                        <img src="./assets/img/Punjab Technical University.jpg" alt="Punjab College">
+                        <div class="msc-agrotech-services-card-design-content">
+                            <div class="msc-agrotech-services-card-design-title">Punjab Technical University</div>
+                            <p class="msc-agrotech-services-card-design-subtitle">
+                                Recognized for excellence in education and entrepreneurship development.
+                            </p>
+                            <a href="https://ptu.ac.in/" target="_blank" class="btn btn-primary">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Telangana -->
+                <div class="col-md-6">
+                    <div class="msc-agrotech-services-card-design-card">
+                        <img src="./assets/img/Telangana State Engineering College.jpg" alt="Telangana College">
+                        <div class="msc-agrotech-services-card-design-content">
+                            <div class="msc-agrotech-services-card-design-title">Telangana State Engineering College
+                            </div>
+                            <p class="msc-agrotech-services-card-design-subtitle">
+                                Globally competitive programs emphasizing hands-on experience and innovation.
+                            </p>
+                            <a href="https://jntuh.ac.in/" target="_blank" class="btn btn-primary">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uttar Pradesh -->
+                <div class="col-md-6">
+                    <div class="msc-agrotech-services-card-design-card">
+                        <img src="./assets/img/Punjab Technical University.jpg" alt="Uttar Pradesh College">
+                        <div class="msc-agrotech-services-card-design-content">
+                            <div class="msc-agrotech-services-card-design-title">Uttar Pradesh Technical University
+                            </div>
+                            <p class="msc-agrotech-services-card-design-subtitle">
+                                World-class education, modern labs, and strong placement records.
+                            </p>
+                            <a href="https://aktu.ac.in/" target="_blank" class="btn btn-primary">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- West Bengal -->
+                <div class="col-md-6">
+                    <div class="msc-agrotech-services-card-design-card">
+                        <img src="./assets/img/Telangana State Engineering College.jpg" alt="West Bengal College">
+                        <div class="msc-agrotech-services-card-design-content">
+                            <div class="msc-agrotech-services-card-design-title">West Bengal University of Technology
+                            </div>
+                            <p class="msc-agrotech-services-card-design-subtitle">
+                                Known for academic excellence, innovation, and research leadership.
+                            </p>
+                            <a href="https://makautwb.ac.in/" target="_blank" class="btn btn-primary">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  college -->
+    <!--  why -->
+    <section class="why-choose-us">
+        <h2 class="title">Why Choose Subh Chandra Foundation?</h2>
+        <p class="subtitle">
+            We connect students with the right diploma and engineering colleges across India through personalized
+            guidance, verified scholarships, and student ID-based admission assistance.
+        </p>
+
+        <div class="content">
+            <!-- Left Features -->
+            <div class="features-left">
+                <div class="feature-box">
+                    <i class="ri-graduation-cap-line icon"></i>
+                    <div>
+                        <h4>Admission Guidance</h4>
+                        <p>We help students find the best-fit college for their career goals through transparent
+                            admission support.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-bank-card-line icon"></i>
+                    <div>
+                        <h4>Student ID Card Access</h4>
+                        <p>Our exclusive student card gives you direct access to foundation benefits and college
+                            collaborations.</p>
+                        <button class="btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-hand-heart-line icon"></i>
+                    <div>
+                        <h4>Scholarship Support</h4>
+                        <p>Financial aid for deserving students to make higher education accessible and affordable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Image with Glowing Circles -->
+            <div class="center-media">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <img src="./assets/img/wh.jpg" alt="Students at college" />
+            </div>
+
+            <!-- Right Features -->
+            <div class="features-right">
+                <div class="feature-box">
+                    <i class="ri-road-map-line icon"></i>
+                    <div>
+                        <h4>Career Counseling</h4>
+                        <p>One-on-one counseling to help you plan your educational path and reach your dream profession.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-building-4-line icon"></i>
+                    <div>
+                        <h4>Partner Colleges</h4>
+                        <p>We work with reputed diploma and engineering colleges to ensure smooth admissions.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-user-smile-line icon"></i>
+                    <div>
+                        <h4>End-to-End Student Support</h4>
+                        <p>From admission to completion, we stand by every student throughout their journey.</p>
+                        <button class="btn">Get Help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end  why -->
+
+    <!-- FAQ Section -->
+    <section class="bot-N-faq">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Left Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="bot-N-faq-card">
+                        <h2>Have Questions About Admissions?</h2>
+                        <div class="accordion accordion-flush" id="faqAccordionLeft">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        How do I admit students from different states?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="accordion-body">
+                                        Manage admissions and counseling for students across Andhra Pradesh, Odisha,
+                                        Punjab, Telangana, Uttar Pradesh, and West Bengal.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Can I create student ID cards directly from the portal?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="accordion-body">
+                                        Yes, once a student is admitted, you can generate personalized ID cards
+                                        instantly.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        How can I track student counseling sessions?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="accordion-body">
+                                        The portal allows logging, scheduling, and reviewing all counseling sessions for
+                                        each student.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bot-N-faq-footer">
+                            <p>Still have questions?</p>
+                            <a href="#" class="btn">CONNECT US <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="bot-N-faq-card">
+                        <h2>More About Our Student Portal</h2>
+                        <div class="accordion accordion-flush" id="faqAccordionRight">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        Can I manage multiple colleges from the same portal?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="accordion-body">
+                                        Yes, you can add and manage multiple colleges across different states in a
+                                        single dashboard.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        How do I generate admission reports?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="accordion-body">
+                                        The portal provides automated reports showing student admissions, pending
+                                        counseling, and ID card generation status.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq6">
+                                        Is there support for student data security?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="accordion-body">
+                                        All student data is encrypted and securely stored. Only authorized admins can
+                                        access sensitive information.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bot-N-faq-footer">
+                            <p>Need further assistance?</p>
+                            <a href="#" class="btn">CONNECT US <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
+    <section class="bot-N-testmonila container">
+        <div class="mb-5 text-center">
+            <h4 class="section-title">Testimonials</h4>
+            <h3>Trusted by College Administrators</h3>
+            <p>Hear from admins across multiple states about our student admission system.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+            <!-- Left side (static) -->
+            <div class="col-md-4">
+                <div class="bot-N-testmonila-left">
+                    <h2>4.9</h2>
+                    <div class="stars">★★★★★</div>
+                    <p>(50+ Reviews)<br>Admins appreciate the streamlined process</p>
+                </div>
+            </div>
+
+            <!-- Right side (carousel) -->
+            <div class="col-md-8">
+                <div class="owl-carousel owl-theme">
+                    <!-- Slide 1 -->
+                    <div class="item">
+                        <div class="bot-N-testmonila-right">
+                            <div class="bot-N-testmonila-rating">5.0 ★★★★★</div>
+                            <p>This portal made student admissions, counseling, and ID card generation effortless.
+                                Managing multiple colleges across different states is now hassle-free.</p>
+                            <h3>Ramesh Kumar</h3>
+                            <p>Admin, Multi-State College Network</p>
+                            <div class="bot-N-testmonila-arrows">
+                                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="item">
+                        <div class="bot-N-testmonila-right">
+                            <div class="bot-N-testmonila-rating">4.8 ★★★★☆</div>
+                            <p>The portal simplifies admin work and student management significantly. A must-have tool
+                                for colleges.</p>
+                            <h3>Sonia Verma</h3>
+                            <p>Admin, Delhi College</p>
+                            <div class="bot-N-testmonila-arrows">
+                                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="item">
+                        <div class="bot-N-testmonila-right">
+                            <div class="bot-N-testmonila-rating">4.7 ★★★★☆</div>
+                            <p>Very easy to use and supports multi-state management. Admin workflow is smooth and
+                                organized.</p>
+                            <h3>Amit Sharma</h3>
+                            <p>Admin, Pune College</p>
+                            <div class="bot-N-testmonila-arrows">
+                                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bot-n-contact-section">
+        <div class="container">
+            <h2>Get Started With Student Admissions</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="./assets/img/contact.png" class="bot-n-contact-img" alt="Contact">
+                </div>
+
+                <div class="col-md-5">
+                    <form>
+                        <input type="text" class="form-control" placeholder="Admin Full Name">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                        <textarea class="form-control" rows="3" placeholder="Your Message / Inquiry"></textarea>
+                        <button type="submit" class="bot-n-contact-btn-submit mt-2">Contact Us</button>
+                    </form>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="bot-n-contact-info">
+                        <p>
+                            <a href="tel:+918699112731" style="text-decoration: none; color: #fff; font-size: 15px">
+                                <i class="fa-solid fa-phone"></i> +91-8699112731
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:info@subhchandrafoundation.com"
+                                style="text-decoration: none; color: #fff; font-size: 15px;">
+                                <i class="fa-solid fa-envelope"></i> info@subhchandrafoundation.com
+                            </a>
+                        </p>
+                        <p style="font-size: 15px">
+                            <i class="fa-solid fa-clock"></i> Mon - Fri : 9:00 AM to 6:00 PM
+                        </p>
+                    </div>
+
+                    <h6>Based in</h6>
+                    <p>Pune, India</p>
+                    <div class="bot-n-contact-social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="triangle"></div>
+    <footer class="msc-agrotech-footer">
+        <div class="container py-5">
+            <!-- Top Contact Info -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+                    <div class="msc-agrotech-footer__logo">
+                        <img src="./assets/img/logo-2.webp" alt="Subh Chandra Educational Welfare Foundation Logo">
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div
+                        class="d-flex justify-content-md-end justify-content-center flex-wrap gap-4 msc-footer-contact-row">
+                        <div class="msc-agrotech-footer__contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="msc-agrotech-footer__contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@subhchandrafoundation.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-50 mb-4">
+
+            <!-- Main Footer Content -->
+            <div class="row gy-4">
+                <div class="col-md-3 col-sm-6">
+                    <h5>About Us</h5>
+                    <p>
+                        The <strong>Subh Chandra Educational Welfare Foundation</strong> was established in 2021 with
+                        the aim of providing quality guidance to students who intend to study. Today, we are leaders in
+                        educational consultancy and represent leading colleges and universities in India.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h5>Engineering Colleges</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="msc-agrotech-footer__link">Andhra Pradesh</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Odisha</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Punjab</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Telangana</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">Uttar Pradesh</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">West Bengal</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h5>Popular Exams</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="msc-agrotech-footer__link">JEE 2025</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">JEE Advanced</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">WBJEE 2025</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">BITSAT</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">COMEDK 2025</a></li>
+                        <li><a href="#" class="msc-agrotech-footer__link">UPCET 2025</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h5>Newsletter Signup</h5>
+                    <form class="msc-agrotech-footer__subscribe-form">
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <small class="d-block mt-2">
+                        Enter your email address to get the latest updates, offers, and discount coupons from us.
+                    </small>
+                    <div class="msc-agrotech-footer__contact-item mt-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Plot 45, Green Valley, Pune, Maharashtra, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-50 mt-4">
+
+            <!-- Bottom Section -->
+            <div class="text-center mt-3">
+                <p class="mb-1">
+                    © 2025 <strong>Subh Chandra Educational Welfare Foundation</strong> |
+                    Developed By <b>Vibrantick Infotech Solutions</b>
+                </p>
+                <div class="msc-social-icons mt-2">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="mt-3">
+                    <a href="#" class="msc-agrotech-footer__link d-inline-block me-3">Privacy Policy</a>
+                    <a href="#" class="msc-agrotech-footer__link d-inline-block">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Hero Carousel -->
+    <script>
+        $(document).ready(function () {
+            $(".freix-nk-hero .owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                nav: false,
+                dots: true
+            });
+        });
+    </script>
+
+    <!-- tesmonial -->
+
+    <script>
+        $(document).ready(function () {
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: false,
+                smartSpeed: 800
+            });
+
+            // Custom prev/next buttons inside each card
+            $(".next").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+            $(".prev").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+        });
+    </script>
+
+    <!-- why -->
+    <script>
+        // Scroll Animation: features appear one by one
+        const boxes = document.querySelectorAll('.feature-box');
+
+        const revealOnScroll = () => {
+            boxes.forEach((box, index) => {
+                const boxTop = box.getBoundingClientRect().top;
+                if (boxTop < window.innerHeight - 80) {
+                    setTimeout(() => box.classList.add('show'), index * 150);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+    </script>
+    <!-- end why -->
+    <!-- Smooth hover dropdown for desktop -->
+    <script>
+        document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                if (window.innerWidth >= 992) {
+                    const menu = this.querySelector('.dropdown-menu');
+                    menu.classList.add('show');
+                }
+            });
+            item.addEventListener('mouseleave', function () {
+                if (window.innerWidth >= 992) {
+                    const menu = this.querySelector('.dropdown-menu');
+                    menu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

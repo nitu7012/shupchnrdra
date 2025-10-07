@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subh Chandra Foundation – Services</title>
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bot-N-primary: #005b9a;
+      --bot-N-primary-dark: #004173;
+      --bot-N-accent: #f28e1e;
+    }
+
+    /* =====  college Card Design ===== */
+    .msc-agrotech-services-card-design-card {
+      display: flex;
+      gap: 15px;
+      align-items: stretch;
+      padding: 20px 15px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background-color: #e8f4fa;
+      border: 2px solid var(--bot-N-primary-dark);
+      box-shadow: rgba(0, 91, 154, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.25) 0px 3px 7px -3px;
+    }
+
+    .msc-agrotech-services-card-design-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0, 91, 154, 0.3);
+      border-color: var(--bot-N-accent);
+    }
+
+    .msc-agrotech-services-card-design-card img {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .msc-agrotech-services-card-design-content {
+      flex-grow: 1;
+    }
+
+    .msc-agrotech-services-card-design-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--bot-N-primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .msc-agrotech-services-card-design-subtitle {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .msc-agrotech-services-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--bot-N-primary-dark);
+      text-transform: capitalize;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: var(--bot-N-primary);
+      border-color: var(--bot-N-primary-dark);
+      transition: 0.3s;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--bot-N-accent);
+      border-color: var(--bot-N-accent);
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .msc-agrotech-services-card-design-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .msc-agrotech-services-card-design-card img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+    /* end college */
+  </style>
+</head>
+
+<body style="background-color: #f8f9fa;">
+
+  <!-- ===== Associated Colleges Section ===== -->
+  <section class="msc-agrotech-card-main-section mb-5">
+    <div class="container">
+      <p class="text-center text-muted mb-1">Countries We Offer Support</p>
+      <h5 class="msc-agrotech-services-title">Our Associated Colleges</h5>
+
+      <div class="row">
+
+        <!-- Andhra Pradesh -->
+        <div class="col-md-6">
+          <div class="msc-agrotech-services-card-design-card">
+            <img src="./assets/img/Andhra Pradesh Engineering Institute.jpg" alt="Andhra Pradesh College">
+            <div class="msc-agrotech-services-card-design-content">
+              <div class="msc-agrotech-services-card-design-title">Andhra Pradesh Engineering Institute</div>
+              <p class="msc-agrotech-services-card-design-subtitle">
+                Premier institute offering top-tier programs with strong industry collaborations.
+              </p>
+              <a href="https://www.andhrauniversity.edu.in/" target="_blank" class="btn btn-primary">
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Odisha -->
+        <div class="col-md-6">
+          <div class="msc-agrotech-services-card-design-card">
+            <img src="./assets/img/Odisha Institute of Technology.jpg" alt="Odisha College">
+            <div class="msc-agrotech-services-card-design-content">
+              <div class="msc-agrotech-services-card-design-title">Odisha Institute of Technology</div>
+              <p class="msc-agrotech-services-card-design-subtitle">
+                A leading educational hub in Eastern India, focusing on innovation and research.
+              </p>
+              <a href="https://www.bput.ac.in/" target="_blank" class="btn btn-primary">
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Punjab -->
+        <div class="col-md-6">
+          <div class="msc-agrotech-services-card-design-card">
+            <img src="./assets/img/Punjab Technical University.jpg" alt="Punjab College">
+            <div class="msc-agrotech-services-card-design-content">
+              <div class="msc-agrotech-services-card-design-title">Punjab Technical University</div>
+              <p class="msc-agrotech-services-card-design-subtitle">
+                Recognized for excellence in education and entrepreneurship development.
+              </p>
+              <a href="https://ptu.ac.in/" target="_blank" class="btn btn-primary">
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telangana -->
+        <div class="col-md-6">
+          <div class="msc-agrotech-services-card-design-card">
+            <img src="./assets/img/Telangana State Engineering College.jpg" alt="Telangana College">
+            <div class="msc-agrotech-services-card-design-content">
+              <div class="msc-agrotech-services-card-design-title">Telangana State Engineering College</div>
+              <p class="msc-agrotech-services-card-design-subtitle">
+                Globally competitive programs emphasizing hands-on experience and innovation.
+              </p>
+              <a href="https://jntuh.ac.in/" target="_blank" class="btn btn-primary">
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Uttar Pradesh -->
+        <div class="col-md-6">
+          <div class="msc-agrotech-services-card-design-card">
+            <img src="./assets/img/Punjab Technical University.jpg" alt="Uttar Pradesh College">
+            <div class="msc-agrotech-services-card-design-content">
+              <div class="msc-agrotech-services-card-design-title">Uttar Pradesh Technical University</div>
+              <p class="msc-agrotech-services-card-design-subtitle">
+                World-class education, modern labs, and strong placement records.
+              </p>
+              <a href="https://aktu.ac.in/" target="_blank" class="btn btn-primary">
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- West Bengal -->
+        <div class="col-md-6">
+          <div class="msc-agrotech-services-card-design-card">
+            <img src="./assets/img/Telangana State Engineering College.jpg" alt="West Bengal College">
+            <div class="msc-agrotech-services-card-design-content">
+              <div class="msc-agrotech-services-card-design-title">West Bengal University of Technology</div>
+              <p class="msc-agrotech-services-card-design-subtitle">
+                Known for academic excellence, innovation, and research leadership.
+              </p>
+              <a href="https://makautwb.ac.in/" target="_blank" class="btn btn-primary">
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!--  college -->
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
